@@ -1,4 +1,5 @@
-﻿forward
+﻿//objectcomments  
+forward
 global type pfc_n_cst_conversion from n_base
 end type
 end forward
@@ -18861,8 +18862,8 @@ Choose Case as_source
 	Case "distill"
 		ae_pdfmethod = distill!
 
-	Case "xslfop"
-		ae_pdfmethod = xslfop!
+	Case "nativepdf"
+		ae_pdfmethod = nativepdf!
 
 	Case Else
 		// Wrong Parameter Value
@@ -18933,8 +18934,8 @@ Choose Case ae_pdfmethod
 	Case distill!
 		Return "distill"
 
-	Case xslfop!
-		Return "xslfop"
+	Case NativePDF!
+		Return "nativepdf"
 		
 End Choose
 
